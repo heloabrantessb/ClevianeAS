@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7b987c; 
+    padding: 10px 15px;
+}
+
+#logo {
+    width: 100px;  
+    height: auto;  
+}
+
+#menu,
+#search,
+#cart {
+    color: #fbe9d5;
+    font-size: 1.5rem;
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0 auto;
+  }
+  
+  /* Para dispositivos móveis (max-width: 768px) */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: auto;
+      max-height: 50vh; /* ajuste a altura para dispositivos móveis */
+    }
+  }
+  
+  /* Para dispositivos desktop (min-width: 769px) */
+  @media (min-width: 769px) {
+    .carousel-inner img {
+      height: auto;
+      max-height: 80vh; /* ajuste a altura para dispositivos desktop */
+    }
+  }
+
+.menu {
+    display: flex;
+    position: absolute;
+    background-color: #fbe9d5; 
+    padding: 10px; 
+    position: absolute; 
+    top: 120px; 
+    width: 20%;
+    height: 100%; 
+    display: none; 
+}
+
+.menu.active {
+    display: flex; 
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    width: 100%; 
+}
+
+.menu li {
+    padding: 10px; 
+}
+
+.menu li a {
+    color: #7b987c; 
+    text-decoration: none;
+}
